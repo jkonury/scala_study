@@ -1,4 +1,7 @@
-
+/**
+  * @author Jang Ji Hong
+  * @since 2017.02.15
+  */
 object Sample {
   implicit class ToAge(val n: Int) extends AnyVal {
     def years(x: old.type): Age = Age(n)
