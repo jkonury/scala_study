@@ -6,8 +6,8 @@ class Rational(n: Int, d: Int) {
   require(d != 0)
 
   private val g = gcd(n.abs, d.abs)
-  val numer = n / g
-  val denom = d / g
+  val numer: Int = n / g
+  val denom: Int = d / g
 
   def this(n: Int) = this(n, 1)
 

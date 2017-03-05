@@ -5,9 +5,9 @@ object ForEx {
                     isMale: Boolean,
                     children: Person*)
 
-  val lara = new Person("Lara", false)
-  val bob = new Person("Bob", true)
-  val julie = new Person("Julie", false, lara, bob)
+  val lara = Person("Lara", false)
+  val bob = Person("Bob", isMale = true)
+  val julie = Person("Julie", false, lara, bob)
   val persons = List(lara, bob, julie)
 
   def for1 = for (p <- persons; n = p.name; if n startsWith "To" ) yield n
